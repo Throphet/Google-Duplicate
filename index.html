@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="https://img.icons8.com/fluent/48/000000/google-logo.png" >
         <title>Google</title>
         <style>
             body {
@@ -82,7 +83,30 @@
                 margin-right: auto;
                 width:584px;
             }
-            
+            .search-btn-block {
+                height: 58px;
+                padding: 15px;
+            }
+
+            .search-btn {
+                border-radius: 2px;
+                background: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                font-size: 13px;
+                width: 150px;
+                padding: 0 16px;
+                height:36px;
+                outline: none;
+                margin: 10px 3px 10px 3px;
+            }
+            .search-btn:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                background: #f8f8f8;
+                border: 1px solid #c6c6c6;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                color: #222;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -102,8 +126,11 @@
             <form class="search-bar-form">
                 <img src="Images/search.png" alt="search" height="15px" width="15px" style="vertical-align: middle; margin: auto; padding-left: 10px; padding-right: 20px">
                 <input class="search-bar" type="text">
-                <img src="https://www.google.com/tia/tia.png" alt="TIA" class="tia-logo">
             </form>
+            <div class="search-btn-block">
+                <button class="search-btn" type="submit">Google meklēšana</button>
+                <button class="search-btn" type="submit">Es ticu veiksmei!</button>
+            </div>
         </div>
         <footer>
 
