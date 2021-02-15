@@ -4,9 +4,26 @@
         <link rel="icon" href="https://img.icons8.com/fluent/48/000000/google-logo.png" >
         <title>Google</title>
         <style>
+            html {
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
             body {
                 font-family: sans-serif;
                 text-align: center;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                overflow:hidden;
+            }
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+            }
+
+            #content-wrap {
+                padding-bottom: 95px;    /* Footer height */
             }
             header {
                 margin: 0px;
@@ -14,6 +31,12 @@
                 padding-bottom: 5px;
                 height: 30px;
                 text-align: right;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
             }
             .menu-icon {
                 height: 24px;
@@ -82,10 +105,12 @@
                 margin-left: auto;
                 margin-right: auto;
                 width:584px;
+                margin-bottom: 0px;
             }
             .search-btn-block {
                 height: 58px;
                 padding: 15px;
+                margin-bottom: 0px;
             }
 
             .search-btn {
@@ -107,34 +132,110 @@
                 color: #222;
                 cursor: pointer;
             }
+            .security-day-text{
+                font-size: 13px;
+                align-items: center;
+                vertical-align: 100%;
+                margin-top: -1.5%;
+            }
+            .security-day{
+                vertical-align: 70%;
+                margin-top: -2%;
+            }
+            .invis:hover{
+                text-decoration: none;
+                cursor: default;
+            }
+            .security-link {
+                color: #1a0dab;
+                margin-left: 5px;
+            }
+
+            footer {
+                background-color: gray;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 95px;
+                color: rgba(0,0,0,.54);
+            }
+            .footer-upper {
+                height: 24px;
+                background-color: #f2f2f2;
+                border-bottom: 1px solid #dadce0;
+                padding-top: 15px;
+                padding-bottom: 9px;
+                padding-left: 32px;
+                font-size: 15px;
+                text-align: left;
+            }
+            .footer-lower {
+                height: 46px;
+                background-color: #f2f2f2;
+            }
+
+            .footer-lower-left{
+                height: 23px;
+                padding-left: 25px;
+                padding-top: 14px;
+                padding-bottom: 7px;
+                text-align: left;
+                font-size: 14px;
+                margin: 0;
+            }
+            .footer-link {
+                padding: 15px;
+            }
+            .footer-link-right {
+                float: right;
+            }
         </style>
     </head>
     <body>
-        <header>
-            <div class="header-block">
-                <div class="header-text-block">
-                    <a href="#" class="header-link"><span class="header-text" style="margin-right: 10px;">Gmail</span></a>
-                    <a href="#" class="header-link"><span class="header-text">Attēli</span></a>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header>
+                    <div class="header-block">
+                        <div class="header-text-block">
+                            <a href="#" class="header-link"><span class="header-text" style="margin-right: 10px;">Gmail</span></a>
+                            <a href="#" class="header-link"><span class="header-text">Attēli</span></a>
+                        </div>
+                        <a href="#" class="header-link"><img src="Images/menu.png" alt="menu icon" class="menu-icon"></a>
+                        <a href="#" class="header-link"><img src="Images/profile-logo.jpeg" alt="profile icon" class="profile-icon"></a>
+                    </div>
+                </header>
+                <div class="google-logo-block">
+                    <img src="Images/main-logo.png" alt="Google logo" class="google-logo">
+                <div class="search-bar-block">
+                    <form class="search-bar-form">
+                        <img src="Images/search.png" alt="search" height="15px" width="15px" style="vertical-align: middle; margin: auto; padding-left: 10px; padding-right: 20px">
+                        <input class="search-bar" type="text">
+                    </form>
+                    <div class="search-btn-block">
+                        <button class="search-btn" type="submit">Google meklēšana</button>
+                        <button class="search-btn" type="submit">Es ticu veiksmei!</button>
+                    </div>
                 </div>
-                <a href="#" class="header-link"><img src="Images/menu.png" alt="menu icon" class="menu-icon"></a>
-                <a href="#" class="header-link"><img src="Images/profile-logo.jpeg" alt="profile icon" class="profile-icon"></a>
+                <p class="security-day-text">Google piedāvājums: <a href="#" class="security-link">English</a>  <a href="#" class="security-link">lietuvių</a>  <a href="#" class="security-link">русский</a></p>
+                </div>
             </div>
-        </header>
-        <div class="google-logo-block">
-            <img src="Images/main-logo.png" alt="Google logo" class="google-logo">
-        <div class="search-bar-block">
-            <form class="search-bar-form">
-                <img src="Images/search.png" alt="search" height="15px" width="15px" style="vertical-align: middle; margin: auto; padding-left: 10px; padding-right: 20px">
-                <input class="search-bar" type="text">
-            </form>
-            <div class="search-btn-block">
-                <button class="search-btn" type="submit">Google meklēšana</button>
-                <button class="search-btn" type="submit">Es ticu veiksmei!</button>
-            </div>
+            <footer>
+                    <div class="footer-upper">Latvija</div>
+                    <div class="footer-lower">
+                        <div class="footer-lower-left">
+                            <a href="#" class="footer-link">Plašāka informācija</a>
+                            <a href="#" class="footer-link">Reklamēšana</a>
+                            <a href="#" class="footer-link">Uzņēmējdarbība</a>
+                            <a href="#" class="footer-link">Kā darbojas meklēšana</a>
+                            <span class="footer-link-right">
+                                <a href="#" class="footer-link">Konfidencialitāte</a>
+                                <a href="#" class="footer-link">Noteikumi</a>
+                                <a href="#" class="footer-link">Iestatījumi</a>
+                            </span>
+                        </div>
+                    </div>
+            </footer>
         </div>
-        <footer>
-
-        </footer>
     </body>
 </html>
 
