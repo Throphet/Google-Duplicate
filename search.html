@@ -12,7 +12,7 @@
             }
             #page-container {
                 position: relative;
-                min-height: 100vh;
+                min-height: 150vh;
             }
 
             #content-wrap {
@@ -137,6 +137,7 @@
             .search-content{
                 margin-left: 180px;
                 width: 35%;
+                float: left;
             }
             .first-result{
                 margin-top: 25px;
@@ -182,6 +183,30 @@
                 margin-bottom:25px;
                 padding-right: 30px;
             }
+            .additional-info {
+                border: 1px solid #dfe1e5;
+                border-radius: 10px;
+                width: 20%;
+                float: right;
+                margin-right: 500px;
+                height: 400px;
+                color: #202124;
+                padding: 5px;
+                padding-bottom: 120px;
+            }
+            .info-title{
+                font-size:24px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            .info-description{
+                border-top: 1px solid #dfe1e5;
+                font-size: 14px;
+                line-height: 1.58;
+                padding: 20px 10px 20px 10px;
+                margin-right: -5px;
+            }
         </style>
     </head>
     <body>
@@ -205,95 +230,111 @@
                     </nav>
                 </header>
                 <div class="time-result">Aptuveni 9 110 000 rezultāti (0,59 sekundes)</div>
-                <div class="search-content">
-                    <div class="first-result">
-                        <div class="result-site"><a href="#" class="result-link">www.rvt.lv</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums</a></div>
-                        <div class="result-description">Arī PIKC “Rīgas Valsts tehnikums” Dzelzceļa nodaļa sadarbībā ar ... Raksti uz solveiga.keistere@rvt.lv, lai pieteiktu savu klasi vai skolu uz tiešsaistes karjeras ...</div>
-                    
-                        <div class="extra-info">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div class="inset-result">
-                                            <div class="result-title"><a href="#" class="result-title-link">Stundu saraksts</a></div>
-                                            <div class="result-description">RVT 100 gadi. LATVIJAS DZELCEĻŠ. LDZ. Sociālie tīkli ...</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="inset-result">
-                                            <div class="result-title"><a href="#" class="result-title-link">Profesijas</a></div>
-                                            <div class="result-description">RVT 100 gadi. Sociālie tīkli. PIKC RVT | TV ... Bibliotēka ...</div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="inset-result">
-                                            <div class="result-title"><a href="#" class="result-title-link">Kontakti</a></div>
-                                            <div class="result-description">Direktore Dagnija Vanaga Telefons 67324146 dagnija ...</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="inset-result">
-                                            <div class="result-title"><a href="#" class="result-title-link">PIKC RVT e-studijas</a></div>
-                                            <div class="result-description">Latviešu ‎(lv)‎. English ‎(en)‎ · Latviešu ‎(lv)‎. PIKC Rīgas ...</div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="inset-result">
-                                            <div class="result-title"><a href="#" class="result-title-link">Uzņemšana</a></div>
-                                            <div class="result-description">RVT 100 gadi. Latvijas dzelzceļš. LDZ. Sociālie tīkli. PIKC RVT ...</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="inset-result">
-                                            <div class="result-title"><a href="#" class="result-title-link">Par mums</a></div>
-                                            <div class="result-description">RVT īsteno trešā profesionālās kvalifikācijas līmeņa izglītības ...</div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+                <div class="content">
+                    <div class="search-content">
+                        <div class="first-result">
+                            <div class="result-site"><a href="#" class="result-link">www.rvt.lv</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums</a></div>
+                            <div class="result-description">Arī PIKC “Rīgas Valsts tehnikums” Dzelzceļa nodaļa sadarbībā ar ... Raksti uz solveiga.keistere@rvt.lv, lai pieteiktu savu klasi vai skolu uz tiešsaistes karjeras ...</div>
+                        
+                            <div class="extra-info">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="inset-result">
+                                                <div class="result-title"><a href="#" class="result-title-link">Stundu saraksts</a></div>
+                                                <div class="result-description">RVT 100 gadi. LATVIJAS DZELCEĻŠ. LDZ. Sociālie tīkli ...</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inset-result">
+                                                <div class="result-title"><a href="#" class="result-title-link">Profesijas</a></div>
+                                                <div class="result-description">RVT 100 gadi. Sociālie tīkli. PIKC RVT | TV ... Bibliotēka ...</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="inset-result">
+                                                <div class="result-title"><a href="#" class="result-title-link">Kontakti</a></div>
+                                                <div class="result-description">Direktore Dagnija Vanaga Telefons 67324146 dagnija ...</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inset-result">
+                                                <div class="result-title"><a href="#" class="result-title-link">PIKC RVT e-studijas</a></div>
+                                                <div class="result-description">Latviešu ‎(lv)‎. English ‎(en)‎ · Latviešu ‎(lv)‎. PIKC Rīgas ...</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="inset-result">
+                                                <div class="result-title"><a href="#" class="result-title-link">Uzņemšana</a></div>
+                                                <div class="result-description">RVT 100 gadi. Latvijas dzelzceļš. LDZ. Sociālie tīkli. PIKC RVT ...</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inset-result">
+                                                <div class="result-title"><a href="#" class="result-title-link">Par mums</a></div>
+                                                <div class="result-description">RVT īsteno trešā profesionālās kvalifikācijas līmeņa izglītības ...</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="other-result">
+                            <div class="result-site"><a href="#" class="result-link">www.rvt-riepas.lv</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">RVT</a></div>
+                            <div class="result-description">riepu centrs “RVT”. Ziepniekkalna iela 23a, Rīga, Latvija, LV-1004. +37129 273 705. Copyrights ® sia RVT 2021. Mājas lapas izstrāde Amparo Mājas lapas ...</div>
+                        </div>
+                        <div class="other-result">
+                            <div class="result-site"><a href="#" class="result-link">www.facebook.com › Places › Riga, Latvia</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums - Home | Facebook</a></div>
+                            <div class="result-description">... this · 2071 were here. Rīgas Valsts Tehnikums ir profesionālās izglītības... ... See All. Videos. Uzņemšana PIKC RVT Krāslavas teritoriālajā struktūrvienībā.</div>
+                        </div>
+                        <div class="other-result">
+                            <div class="result-site"><a href="#" class="result-link">pikcrvt.edupage.org › timetable</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">Stundu saraksts | PIKC „Rīgas Valsts tehnikums”</a></div>
+                            <div class="result-description">aSc Timetables - skolas darba plānošanas programmatūra. Saziņai. PIKC „Rīgas Valsts tehnikums”. dace.rozenblate@rvt.lv. (+371) 67325748. Kr. Valdemāra ...</div>
+                        </div>
+                        <div class="other-result">
+                            <div class="result-site"><a href="#" class="result-link">www.prakse.lv › edu › profile › rigas-valsts-tehnikums</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums - Prakse</a></div>
+                            <div class="result-description">RVT realizē profesionālās vidējās izglītības programmas, kas dod iespēju iegūt trešo profesionālās kvalifikācijas līmeni, un papildus veic reģionālā vai nozares ...</div>
+                        </div>
+                        <div class="other-result">
+                            <div class="result-site"><a href="#" class="result-link">lv.wikipedia.org › wiki › Rīgas_Valsts_tehnikums</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums — Vikipēdija</a></div>
+                            <div class="result-description">Rīgas Valsts tehnikums, saīsinājumā RVT, ir mācību iestāde Rīgā. Šī mācību iestāde dibināta 1919. gada 29. decembrī. Rīgas Valsts tehnikumā var iegūt ...</div>
+                        </div>
+                        <div class="other-result">
+                            <div class="result-site"><a href="#" class="result-link">twitter.com › rvt_lv</a></div>
+                            <div class="result-title"><a href="#" class="result-title-link">PIKC RVT (@rvt_lv) | Twitter</a></div>
+                            <div class="result-description">The latest Tweets from PIKC RVT (@rvt_lv). Rīgas Valsts Tehnikums. Riga, Latvia.</div>
+                        </div>
+                        <div class="page-manager">
+                            <a href="#">
+                                <img src="Images/search-page-manager.png" alt="page-manager" />
+                            </a>
                         </div>
                     </div>
-                    <div class="other-result">
-                        <div class="result-site"><a href="#" class="result-link">www.rvt-riepas.lv</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">RVT</a></div>
-                        <div class="result-description">riepu centrs “RVT”. Ziepniekkalna iela 23a, Rīga, Latvija, LV-1004. +37129 273 705. Copyrights ® sia RVT 2021. Mājas lapas izstrāde Amparo Mājas lapas ...</div>
-                    </div>
-                    <div class="other-result">
-                        <div class="result-site"><a href="#" class="result-link">www.facebook.com › Places › Riga, Latvia</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums - Home | Facebook</a></div>
-                        <div class="result-description">... this · 2071 were here. Rīgas Valsts Tehnikums ir profesionālās izglītības... ... See All. Videos. Uzņemšana PIKC RVT Krāslavas teritoriālajā struktūrvienībā.</div>
-                    </div>
-                    <div class="other-result">
-                        <div class="result-site"><a href="#" class="result-link">pikcrvt.edupage.org › timetable</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">Stundu saraksts | PIKC „Rīgas Valsts tehnikums”</a></div>
-                        <div class="result-description">aSc Timetables - skolas darba plānošanas programmatūra. Saziņai. PIKC „Rīgas Valsts tehnikums”. dace.rozenblate@rvt.lv. (+371) 67325748. Kr. Valdemāra ...</div>
-                    </div>
-                    <div class="other-result">
-                        <div class="result-site"><a href="#" class="result-link">www.prakse.lv › edu › profile › rigas-valsts-tehnikums</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums - Prakse</a></div>
-                        <div class="result-description">RVT realizē profesionālās vidējās izglītības programmas, kas dod iespēju iegūt trešo profesionālās kvalifikācijas līmeni, un papildus veic reģionālā vai nozares ...</div>
-                    </div>
-                    <div class="other-result">
-                        <div class="result-site"><a href="#" class="result-link">lv.wikipedia.org › wiki › Rīgas_Valsts_tehnikums</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums — Vikipēdija</a></div>
-                        <div class="result-description">Rīgas Valsts tehnikums, saīsinājumā RVT, ir mācību iestāde Rīgā. Šī mācību iestāde dibināta 1919. gada 29. decembrī. Rīgas Valsts tehnikumā var iegūt ...</div>
-                    </div>
-                    <div class="other-result">
-                        <div class="result-site"><a href="#" class="result-link">twitter.com › rvt_lv</a></div>
-                        <div class="result-title"><a href="#" class="result-title-link">PIKC RVT (@rvt_lv) | Twitter</a></div>
-                        <div class="result-description">The latest Tweets from PIKC RVT (@rvt_lv). Rīgas Valsts Tehnikums. Riga, Latvia.</div>
-                    </div>
-                    <div class="page-manager">
-                        <a href="#">
-                            <img src="Images/search-page-manager.png" alt="page-manager" />
-                        </a>
+                    <div class="additional-info">
+                        <div class="info-header">
+                            <img src="Images/info.png" alt="info img" />
+                            <div class="info-title">Rīgas Valsts Tehnikums</div>
+                        </div>
+                        <div class="info-description">Rīgas Valsts tehnikums, saīsinājumā RVT, ir mācību iestāde Rīgā. Šī mācību iestāde dibināta 1919. gada 29. decembrī. Rīgas Valsts tehnikumā var iegūt nepieciešamās zināšanas, prasmes un iemaņas atbilstoši profesiju standartiem un esošajām kvalifikācijas prasībām. 
+                            <br/>
+                            <br/><b>Adrese:</b> Krišjāņa Valdemāra iela 1C, Centra rajons, Rīga, LV-1010
+                            <br/><b>Darba laiks:</b> Aizvērts ⋅ Tiks atvērts: 08
+                            <br/><b>Valsts:</b> Latvija
+                            <br/><b>Tālruņa numuri:</b> 67 324 146
+                            <br/><b>Dibināšanas datums:</b> 1919. g. </div>
                     </div>
                 </div>
+                
             </div>
             <footer>
                     <div class="footer-upper">Latvija</div>
