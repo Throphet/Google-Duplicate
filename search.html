@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="https://img.icons8.com/fluent/48/000000/google-logo.png" >
+        <title>Google</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+            }
+
+            #content-wrap {
+                padding-bottom: 95px;    /* Footer height */
+            }
+            header {
+                margin: 0px;
+                padding-top: 25px;
+                padding-bottom: 5px;
+                height: 95px;
+                text-align: right;
+                display:inline-flex;
+                width: 100%;
+                border-bottom:1px solid #ebebeb;
+            }
+            .menu-icon {
+                height: 24px;
+                width: 24px;
+                margin-top: 7px;
+            }
+            .menu-icon:hover {
+                background-color: lightgrey;
+                border-radius: 50%;
+            }
+            .profile-icon {
+                width: 35px;
+                border-radius: 50%;
+                margin-top: 1px;
+                margin-right: 30px;
+                margin-left: 14px;
+            }
+            .header-block {
+                display:inline-flex;
+                height:40px;
+            }
+            .google-logo {
+                text-align:left !important;
+                width: 92px;
+                height: 30px;
+                padding: 25px;
+                padding-top: 10px;
+            }
+            .search-bar-block{
+                height: 50px;
+                padding: 20px;
+                text-align: left;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 7px;
+            }
+            .search-bar {
+                height: 40px !important;
+                width: 565px !important;
+                outline: none;
+                border: 0px;
+                margin-right: 15px;
+                margin-left: 15px;
+                margin-top: 2px;
+            }
+            .search-bar-form {
+                border: 1px solid lightgrey;
+                border-radius: 23px;
+                display: block;
+                margin-left: 20px;
+                margin-right: auto;
+                width:650px;
+                margin-bottom: 0px;
+                height: 45px;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            footer {
+                background-color: gray;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 95px;
+                color: rgba(0,0,0,.54);
+            }
+            .footer-upper {
+                height: 24px;
+                background-color: #f2f2f2;
+                border-bottom: 1px solid #dadce0;
+                padding-top: 15px;
+                padding-bottom: 9px;
+                padding-left: 32px;
+                font-size: 15px;
+                text-align: left;
+            }
+            .footer-lower {
+                height: 46px;
+                background-color: #f2f2f2;
+            }
+
+            .footer-lower-left{
+                height: 23px;
+                padding-left: 25px;
+                padding-top: 14px;
+                padding-bottom: 7px;
+                text-align: left;
+                font-size: 14px;
+                margin: 0;
+            }
+            .footer-link {
+                padding: 15px;
+            }
+            .footer-link-right {
+                float: right;
+            }
+            .time-result {
+                margin-left: 180px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: grey;
+            }
+            .search-content{
+                margin-left: 180px;
+                width: 35%;
+            }
+            .first-result{
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .other-result{
+                margin-bottom:25px;
+            }
+            .result-site {
+                font-size: 13px;
+                color:grey;
+            }
+            .result-title{
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .result-description{
+                font-size:15px;
+            }
+            .result-link{
+                text-decoration: none;
+                color:grey;
+            }
+            .result-title-link{
+                color: #1a0dab;
+                text-decoration: none;
+            }
+            .result-title-link:visited{
+                color:#609;
+            }
+            .page-manager{
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 35px;
+            }
+            .extra-info {
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: -3%;
+            }
+            .inset-result{
+                margin-bottom:25px;
+                padding-right: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header>
+                    <a href="index.html">
+                        <img src="Images/main-logo-small.png" alt="Google logo" class="google-logo">
+                    </a>
+                    <form class="search-bar-form">
+                        <input class="search-bar" type="text">
+                        <img src="Images/search.png" alt="search" height="15px" width="15px" style="vertical-align: middle; margin: auto; padding-left: 10px; padding-right: 20px">
+                    </form>
+                    
+                    <div class="header-block">
+                        <a href="#" class="header-link"><img src="Images/menu.png" alt="menu icon" class="menu-icon"></a>
+                        <a href="#" class="header-link"><img src="Images/profile-logo.jpeg" alt="profile icon" class="profile-icon"></a>
+                    </div>
+                    <nav>
+                        <!-- TODO -->
+                    </nav>
+                </header>
+                <div class="time-result">Aptuveni 9 110 000 rezultāti (0,59 sekundes)</div>
+                <div class="search-content">
+                    <div class="first-result">
+                        <div class="result-site"><a href="#" class="result-link">www.rvt.lv</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums</a></div>
+                        <div class="result-description">Arī PIKC “Rīgas Valsts tehnikums” Dzelzceļa nodaļa sadarbībā ar ... Raksti uz solveiga.keistere@rvt.lv, lai pieteiktu savu klasi vai skolu uz tiešsaistes karjeras ...</div>
+                    
+                        <div class="extra-info">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="inset-result">
+                                            <div class="result-title"><a href="#" class="result-title-link">Stundu saraksts</a></div>
+                                            <div class="result-description">RVT 100 gadi. LATVIJAS DZELCEĻŠ. LDZ. Sociālie tīkli ...</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inset-result">
+                                            <div class="result-title"><a href="#" class="result-title-link">Profesijas</a></div>
+                                            <div class="result-description">RVT 100 gadi. Sociālie tīkli. PIKC RVT | TV ... Bibliotēka ...</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="inset-result">
+                                            <div class="result-title"><a href="#" class="result-title-link">Kontakti</a></div>
+                                            <div class="result-description">Direktore Dagnija Vanaga Telefons 67324146 dagnija ...</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inset-result">
+                                            <div class="result-title"><a href="#" class="result-title-link">PIKC RVT e-studijas</a></div>
+                                            <div class="result-description">Latviešu ‎(lv)‎. English ‎(en)‎ · Latviešu ‎(lv)‎. PIKC Rīgas ...</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="inset-result">
+                                            <div class="result-title"><a href="#" class="result-title-link">Uzņemšana</a></div>
+                                            <div class="result-description">RVT 100 gadi. Latvijas dzelzceļš. LDZ. Sociālie tīkli. PIKC RVT ...</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inset-result">
+                                            <div class="result-title"><a href="#" class="result-title-link">Par mums</a></div>
+                                            <div class="result-description">RVT īsteno trešā profesionālās kvalifikācijas līmeņa izglītības ...</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="other-result">
+                        <div class="result-site"><a href="#" class="result-link">www.rvt-riepas.lv</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">RVT</a></div>
+                        <div class="result-description">riepu centrs “RVT”. Ziepniekkalna iela 23a, Rīga, Latvija, LV-1004. +37129 273 705. Copyrights ® sia RVT 2021. Mājas lapas izstrāde Amparo Mājas lapas ...</div>
+                    </div>
+                    <div class="other-result">
+                        <div class="result-site"><a href="#" class="result-link">www.facebook.com › Places › Riga, Latvia</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums - Home | Facebook</a></div>
+                        <div class="result-description">... this · 2071 were here. Rīgas Valsts Tehnikums ir profesionālās izglītības... ... See All. Videos. Uzņemšana PIKC RVT Krāslavas teritoriālajā struktūrvienībā.</div>
+                    </div>
+                    <div class="other-result">
+                        <div class="result-site"><a href="#" class="result-link">pikcrvt.edupage.org › timetable</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">Stundu saraksts | PIKC „Rīgas Valsts tehnikums”</a></div>
+                        <div class="result-description">aSc Timetables - skolas darba plānošanas programmatūra. Saziņai. PIKC „Rīgas Valsts tehnikums”. dace.rozenblate@rvt.lv. (+371) 67325748. Kr. Valdemāra ...</div>
+                    </div>
+                    <div class="other-result">
+                        <div class="result-site"><a href="#" class="result-link">www.prakse.lv › edu › profile › rigas-valsts-tehnikums</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums - Prakse</a></div>
+                        <div class="result-description">RVT realizē profesionālās vidējās izglītības programmas, kas dod iespēju iegūt trešo profesionālās kvalifikācijas līmeni, un papildus veic reģionālā vai nozares ...</div>
+                    </div>
+                    <div class="other-result">
+                        <div class="result-site"><a href="#" class="result-link">lv.wikipedia.org › wiki › Rīgas_Valsts_tehnikums</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">Rīgas Valsts tehnikums — Vikipēdija</a></div>
+                        <div class="result-description">Rīgas Valsts tehnikums, saīsinājumā RVT, ir mācību iestāde Rīgā. Šī mācību iestāde dibināta 1919. gada 29. decembrī. Rīgas Valsts tehnikumā var iegūt ...</div>
+                    </div>
+                    <div class="other-result">
+                        <div class="result-site"><a href="#" class="result-link">twitter.com › rvt_lv</a></div>
+                        <div class="result-title"><a href="#" class="result-title-link">PIKC RVT (@rvt_lv) | Twitter</a></div>
+                        <div class="result-description">The latest Tweets from PIKC RVT (@rvt_lv). Rīgas Valsts Tehnikums. Riga, Latvia.</div>
+                    </div>
+                    <div class="page-manager">
+                        <a href="#">
+                            <img src="Images/search-page-manager.png" alt="page-manager" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                    <div class="footer-upper">Latvija</div>
+                    <div class="footer-lower">
+                        <div class="footer-lower-left">
+                            <a href="#" class="footer-link">Plašāka informācija</a>
+                            <a href="#" class="footer-link">Reklamēšana</a>
+                            <a href="#" class="footer-link">Uzņēmējdarbība</a>
+                            <a href="#" class="footer-link">Kā darbojas meklēšana</a>
+                            <span class="footer-link-right">
+                                <a href="#" class="footer-link">Konfidencialitāte</a>
+                                <a href="#" class="footer-link">Noteikumi</a>
+                                <a href="#" class="footer-link">Iestatījumi</a>
+                            </span>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
+<!-- Resources for next use
+Page:
+font-family:Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;letter-spacing:.25px;
+
+Images:
+Main logo located in /Images/main-logo.png
+https://www.google.com/tia/tia.png
+-->
